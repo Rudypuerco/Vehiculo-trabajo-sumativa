@@ -10,8 +10,17 @@ public class Vehiculo {   // llamado a la clase como vehiculo
         int cilindrada;
         String tipoCombustible;
         int capacidad;
+        String edad;
+        String nombre;
 
         // pedir al usuario que isnerte los datos
+        
+         System.out.println("Ingrese su edad:"); 
+        edad = sc.nextLine();
+        
+        System.out.println("Ingrese su nombre:");
+        nombre = sc.nextLine();
+        
         System.out.println("Ingrese la marca:"); 
         marca = sc.nextLine();
 
@@ -29,6 +38,8 @@ public class Vehiculo {   // llamado a la clase como vehiculo
         capacidad = sc.nextInt();
         
         // muestra en consola los resultados
+        System.out.println("el nombre que ha ingresado es:" + nombre);
+         System.out.println("La edad que ha ingresado es: " + edad);
         System.out.println("La marca que ha ingresado es: " + marca);
         System.out.println("El modelo que ha ingresado es: " + modelo);
         System.out.println("La cilindrada que ha ingresado es: " + cilindrada);
